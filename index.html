@@ -5,10 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guess The Word</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+  <div id="game">
+    <div id="welcome-screen">
+      <h1>Guess The Word</h1>
+      <p>Select your level:</p>
+      <button data-level="A1-A2">A1-A2</button>
+      <button data-level="B1-B2">B1-B2</button>
+      <button data-level="C1-C2">C1-C2</button>
+    </div>
 
+    <div id="game-screen">
+      <h2 id="word-display">_ _ _ _ _</h2>
+      <div id="lives">Lives: <span id="lives-count">5</span></div>
+      <div id="timer">Time: <span id="timer-count">120</span>s</div>
+      <div id="score">Score: <span id="score-count">0</span></div>
+      <input type="text" id="guess-input" maxlength="1" placeholder="Enter a letter">
+      <button id="guess-btn">Guess</button>
+      <button id="new-word-btn">Next Word</button>
+    </div>
+  </div>
+  <footer>
+    <small>© 2024 Esteban's Language Gym</small>
+  </footer>
+  <script src="app.js"></script>
 </body>
 
 </html>
