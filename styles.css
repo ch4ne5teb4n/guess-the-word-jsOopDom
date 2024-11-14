@@ -1,0 +1,81 @@
+:root {
+  --primary-color: #ff7e00; /* Vibrant Orange */
+  --secondary-color: #ffffff; /* White */
+  --background-color: #121212; /* Dark background */
+  --text-color: #ffffff; /* White text */
+  --darker-text-color: #cc6600; /* Darker shade for some text */
+  --button-bg-color: var(--primary-color); /* Use primary color for buttons */
+  --button-hover-bg-color: #cc6600; /* Darker shade for button hover */
+  --input-border-color: #cccccc; /* Input border */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+#game {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: var(--secondary-color);
+  width: 300px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: var(--primary-color);
+}
+
+#welcome-screen, p {
+  color: var(--primary-color);
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: var(--button-bg-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: var(--button-hover-bg-color);
+}
+
+#guess-input {
+  margin-top: 15px;
+  padding: 10px;
+  width: 80%;
+  font-size: 1em;
+  text-align: center;
+  border: 1px solid var(--input-border-color);
+  border-radius: 5px;
+}
+
+#lives, #timer, #score {
+  margin: 10px 0;
+  font-size: 1em;
+  color: var(--primary-color);
+}
+
+footer {
+  margin-top: 20px;
+  color: var(--text-color);
+  font-size: 0.8em;
+}
